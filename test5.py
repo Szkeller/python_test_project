@@ -26,7 +26,7 @@ def getStocklist(list,stockURL):
             continue
 
 def getStockInfo(list,stockURL,filePath):
-    print(stockURL)
+    #print(stockURL)
 
     count = 0
     for stock in list:
