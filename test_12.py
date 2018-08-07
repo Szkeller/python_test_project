@@ -3,13 +3,15 @@
 import requests
 import re
 import json, time
+from config import *
+
 #-------------------------------------------------------------------------------------------------
 def get_1st_page(url):
     #set header
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit 537.36 (KHTML, like Gecko) Chrome"}
+    #headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit 537.36 (KHTML, like Gecko) Chrome"}
 
 
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=HEADERS)
     if response.status_code == 200:
         return response.text
     return None

@@ -7,4 +7,4 @@ def getHtml(url):
 
 html = getHtml("http://tieba.baidu.com/p/5100827239")
 
-print html
+print( html)
