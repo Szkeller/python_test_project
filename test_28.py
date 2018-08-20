@@ -33,6 +33,7 @@ def index_page(page):
             input = wait.until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, '#mainsrp-pager div.form > input')))
             submit = wait.until(
+
                 EC.element_to_be_clickable((By.CSS_SELECTOR, '#mainsrp-pager div.form > span.btn.J_Submit')))
             input.clear()
             input.send_keys(page)

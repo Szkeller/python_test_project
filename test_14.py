@@ -2,6 +2,7 @@
 
 import mysql.connector
 
+
 db= mysql.connector.connect(user='root', password='123456', host='localhost')
 cursor = db.cursor()
 cursor.execute('SELECT VERSION()')
