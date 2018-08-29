@@ -6,9 +6,9 @@ db=mysql.connector.connect(user='root', password='123456', host='localhost', dat
 cursor=db.cursor()
 
 data = {
-    'id':'2018072002',
-    'name':'Lee',
-    'age': 21
+    'id':'2018072003',
+    'name':'Lee_test',
+    'age': 22
 }
 
 table = 'students'
